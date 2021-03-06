@@ -13,7 +13,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.breeze.assignment_5_final.Model.APIResponse;
+import com.breeze.assignment_5_final.Model.GsonResponse;
 import com.google.gson.Gson;
 
 public class Volley extends AppCompatActivity {
@@ -34,7 +34,7 @@ public class Volley extends AppCompatActivity {
             public void onResponse(String response) {
 
                 Gson gson=new Gson();
-                APIResponse res=gson.fromJson(response, APIResponse.class);
+                GsonResponse res=gson.fromJson(response, GsonResponse.class);
                // Toast.makeText(Volley.this, response.toString(), Toast.LENGTH_SHORT).show();
 
                 LinearLayoutManager linearLayoutManager = new LinearLayoutManager(Volley.this);
