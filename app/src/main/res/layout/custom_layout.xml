@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="data"
+            type="com.breeze.assignment_5_final.Model.ContactsItem" />
+
+    </data>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:textSize="35sp"
+        android:text="@{data.name}"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_email"
+        android:textSize="35sp"
+        android:text="@{data.email}"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_home"
+        android:textSize="35sp"
+        android:text="@{data.phone.home}"/>
+
+</LinearLayout>
+</layout>
