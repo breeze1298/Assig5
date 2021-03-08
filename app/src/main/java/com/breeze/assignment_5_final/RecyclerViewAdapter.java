@@ -5,8 +5,8 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 
-import com.breeze.assignment_5_final.Model.ContactsItem;
 import com.breeze.assignment_5_final.databinding.CustomLayoutBinding;
+import com.breeze.assignment_5_final.pojo.ContactsItem;
 
 import java.util.ArrayList;
 

@@ -1,8 +1,9 @@
-package com.breeze.assignment_5_final.Model;
+package com.breeze.assignment_5_final;
+
+import com.breeze.assignment_5_final.pojo.ContactsItem;
+import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
-
-import com.google.gson.annotations.SerializedName;
 
 public class GsonResponse {
 

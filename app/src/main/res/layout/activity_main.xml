@@ -3,7 +3,7 @@
     <data>
         <variable
             name="User"
-            type="com.breeze.assignment_5_final.Model.User" />
+            type="com.breeze.assignment_5_final.pojo.User" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

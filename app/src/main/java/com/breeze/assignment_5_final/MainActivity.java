@@ -9,8 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.breeze.assignment_5_final.Model.User;
 import com.breeze.assignment_5_final.databinding.ActivityMainBinding;
+import com.breeze.assignment_5_final.pojo.User;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.breeze.assignment_5_final.Model;
+package com.breeze.assignment_5_final.pojo;
 
 import androidx.databinding.BaseObservable;
 
