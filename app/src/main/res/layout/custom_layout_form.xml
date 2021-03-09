@@ -32,7 +32,7 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:textSize="25sp"
-                    android:text="Name"
+                    android:text="@string/name"
                     android:fontFamily="sans-serif-black">
                 </TextView>
 
@@ -56,7 +56,7 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:textSize="25sp"
-                    android:text="Email ID"
+                    android:text="@string/email"
                     android:fontFamily="sans-serif-black">
                 </TextView>
 
@@ -80,7 +80,7 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:textSize="25sp"
-                    android:text="Mobile No"
+                    android:text="@string/mobile_number"
                     android:fontFamily="sans-serif-black">
                 </TextView>
 
@@ -103,7 +103,7 @@
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:textSize="25sp"
-                    android:text="Address"
+                    android:text="@string/address"
                     android:fontFamily="sans-serif-black">
                 </TextView>
 

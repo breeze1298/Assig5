@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="Volley API"
+        android:text="@string/volley_header"
         android:textSize="35sp"
         android:fontFamily="sans-serif-black"/>
 
