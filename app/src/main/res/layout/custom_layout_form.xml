@@ -113,7 +113,7 @@
                     android:layout_height="100dp"
                     android:textSize="25sp"
                     android:id="@+id/fAddress"
-                    android:text="@{Form.address}">
+                    android:text="@={Form.address}">
                 </TextView>
 
             </RelativeLayout>

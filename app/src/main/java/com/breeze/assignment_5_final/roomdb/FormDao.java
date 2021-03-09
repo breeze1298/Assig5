@@ -1,8 +1,10 @@
 package com.breeze.assignment_5_final.roomdb;
 
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
 import java.util.List;
 
@@ -11,15 +13,15 @@ public interface FormDao {
     @Insert
     void insert(FormEntity form);
 
-    @Insert
-    void insertAll(FormEntity... form);
-
     @Query("SELECT * FROM FormEntity")
     List<FormEntity> getFormDetails();
 
-//    @Update
-//    List<FormEntity> updateFormDetails();
+    @Update
+    void update(FormEntity formEntity);
 
-//    @Query("select * from form_details where id in (:)" )
+    @Delete
+    void delete(FormEntity formEntity);
+
+
 
 }

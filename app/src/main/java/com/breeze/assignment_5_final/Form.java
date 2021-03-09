@@ -40,7 +40,7 @@ public class Form extends AppCompatActivity {
 
         ArrayList<FormEntity> allDetails=new ArrayList<>(DatabaseClient.getInstance(Form.this).getUserDao().getFormDetails());
 
-       FormRecyclerViewAdapter adapter=new FormRecyclerViewAdapter(allDetails);
+       FormRecyclerViewAdapter adapter=new FormRecyclerViewAdapter(Form.this,allDetails);
         recyclerView.setAdapter(adapter);
 
         addForm.setOnClickListener(doThis -> {
@@ -60,7 +60,7 @@ public class Form extends AppCompatActivity {
         EditText address = subView.findViewById(R.id.et_address);
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-//        builder.setTitle("Add Details");
+        builder.setTitle("Add Details");
         builder.setView(subView);
         builder.setPositiveButton("Add Details", new DialogInterface.OnClickListener() {
             @Override
@@ -104,7 +104,6 @@ public class Form extends AppCompatActivity {
                     address.setError("Address Field Cannot be Empty ");
                 } else if (s3.length() == 10) {
                     error = false;
-
 
                     new SaveTask().execute();
                     finish();
